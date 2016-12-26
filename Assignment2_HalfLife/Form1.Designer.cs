@@ -31,15 +31,15 @@
             this.lbl_Init_Amount = new System.Windows.Forms.Label();
             this.lbl_CurAmount = new System.Windows.Forms.Label();
             this.lbl_ElapsedTime = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txt_InitAmt = new System.Windows.Forms.TextBox();
+            this.txt_ElapsedTime = new System.Windows.Forms.TextBox();
+            this.txt_CurrAmt = new System.Windows.Forms.TextBox();
             this.btn_IncreaseTime = new System.Windows.Forms.Button();
             this.btn_DecreaseTime = new System.Windows.Forms.Button();
             this.btn_Calculate = new System.Windows.Forms.Button();
             this.btn_Defaults = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.lbl_Half_Life = new System.Windows.Forms.Label();
+            this.lbl_HL_result = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -71,36 +71,36 @@
             this.lbl_ElapsedTime.TabIndex = 2;
             this.lbl_ElapsedTime.Text = "Elapsed Time";
             // 
-            // textBox1
+            // txt_InitAmt
             // 
-            this.textBox1.Location = new System.Drawing.Point(101, 62);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(60, 20);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.Text = "100";
+            this.txt_InitAmt.Location = new System.Drawing.Point(101, 62);
+            this.txt_InitAmt.Name = "txt_InitAmt";
+            this.txt_InitAmt.Size = new System.Drawing.Size(60, 20);
+            this.txt_InitAmt.TabIndex = 3;
+            this.txt_InitAmt.TextChanged += new System.EventHandler(this.txt_InitAmt_TextChanged);
             // 
-            // textBox2
+            // txt_ElapsedTime
             // 
-            this.textBox2.Location = new System.Drawing.Point(101, 176);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(60, 20);
-            this.textBox2.TabIndex = 4;
-            this.textBox2.Text = "2";
+            this.txt_ElapsedTime.Location = new System.Drawing.Point(101, 176);
+            this.txt_ElapsedTime.Name = "txt_ElapsedTime";
+            this.txt_ElapsedTime.Size = new System.Drawing.Size(60, 20);
+            this.txt_ElapsedTime.TabIndex = 5;
+            this.txt_ElapsedTime.TextChanged += new System.EventHandler(this.txt_ElapsedTime_TextChanged);
             // 
-            // textBox3
+            // txt_CurrAmt
             // 
-            this.textBox3.Location = new System.Drawing.Point(101, 116);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(60, 20);
-            this.textBox3.TabIndex = 5;
-            this.textBox3.Text = "25";
+            this.txt_CurrAmt.Location = new System.Drawing.Point(101, 116);
+            this.txt_CurrAmt.Name = "txt_CurrAmt";
+            this.txt_CurrAmt.Size = new System.Drawing.Size(60, 20);
+            this.txt_CurrAmt.TabIndex = 4;
+            this.txt_CurrAmt.TextChanged += new System.EventHandler(this.txt_CurrAmt_TextChanged);
             // 
             // btn_IncreaseTime
             // 
             this.btn_IncreaseTime.Location = new System.Drawing.Point(229, 85);
             this.btn_IncreaseTime.Name = "btn_IncreaseTime";
             this.btn_IncreaseTime.Size = new System.Drawing.Size(95, 23);
-            this.btn_IncreaseTime.TabIndex = 6;
+            this.btn_IncreaseTime.TabIndex = 7;
             this.btn_IncreaseTime.Text = "Increase Time";
             this.btn_IncreaseTime.UseVisualStyleBackColor = true;
             // 
@@ -109,7 +109,7 @@
             this.btn_DecreaseTime.Location = new System.Drawing.Point(229, 129);
             this.btn_DecreaseTime.Name = "btn_DecreaseTime";
             this.btn_DecreaseTime.Size = new System.Drawing.Size(95, 23);
-            this.btn_DecreaseTime.TabIndex = 7;
+            this.btn_DecreaseTime.TabIndex = 8;
             this.btn_DecreaseTime.Text = "Decrease Time";
             this.btn_DecreaseTime.UseVisualStyleBackColor = true;
             // 
@@ -118,9 +118,10 @@
             this.btn_Calculate.Location = new System.Drawing.Point(50, 218);
             this.btn_Calculate.Name = "btn_Calculate";
             this.btn_Calculate.Size = new System.Drawing.Size(111, 23);
-            this.btn_Calculate.TabIndex = 8;
+            this.btn_Calculate.TabIndex = 6;
             this.btn_Calculate.Text = "Calculate Half-Life";
             this.btn_Calculate.UseVisualStyleBackColor = true;
+            this.btn_Calculate.Click += new System.EventHandler(this.btn_Calculate_Click);
             // 
             // btn_Defaults
             // 
@@ -130,6 +131,7 @@
             this.btn_Defaults.TabIndex = 9;
             this.btn_Defaults.Text = "Reset Defaults";
             this.btn_Defaults.UseVisualStyleBackColor = true;
+            this.btn_Defaults.Click += new System.EventHandler(this.btn_Defaults_Click);
             // 
             // label1
             // 
@@ -141,14 +143,13 @@
             this.label1.TabIndex = 10;
             this.label1.Text = "Half-Life Calculator";
             // 
-            // lbl_Half_Life
+            // lbl_HL_result
             // 
-            this.lbl_Half_Life.AutoSize = true;
-            this.lbl_Half_Life.Location = new System.Drawing.Point(15, 263);
-            this.lbl_Half_Life.Name = "lbl_Half_Life";
-            this.lbl_Half_Life.Size = new System.Drawing.Size(52, 13);
-            this.lbl_Half_Life.TabIndex = 11;
-            this.lbl_Half_Life.Text = "Half-life is";
+            this.lbl_HL_result.AutoSize = true;
+            this.lbl_HL_result.Location = new System.Drawing.Point(15, 263);
+            this.lbl_HL_result.Name = "lbl_HL_result";
+            this.lbl_HL_result.Size = new System.Drawing.Size(0, 13);
+            this.lbl_HL_result.TabIndex = 11;
             // 
             // label2
             // 
@@ -164,7 +165,7 @@
             this.btnExit.Location = new System.Drawing.Point(143, 258);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(45, 22);
-            this.btnExit.TabIndex = 13;
+            this.btnExit.TabIndex = 10;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
@@ -176,15 +177,15 @@
             this.ClientSize = new System.Drawing.Size(336, 288);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.lbl_Half_Life);
+            this.Controls.Add(this.lbl_HL_result);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_Defaults);
             this.Controls.Add(this.btn_Calculate);
             this.Controls.Add(this.btn_DecreaseTime);
             this.Controls.Add(this.btn_IncreaseTime);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_CurrAmt);
+            this.Controls.Add(this.txt_ElapsedTime);
+            this.Controls.Add(this.txt_InitAmt);
             this.Controls.Add(this.lbl_ElapsedTime);
             this.Controls.Add(this.lbl_CurAmount);
             this.Controls.Add(this.lbl_Init_Amount);
@@ -201,15 +202,15 @@
         private System.Windows.Forms.Label lbl_Init_Amount;
         private System.Windows.Forms.Label lbl_CurAmount;
         private System.Windows.Forms.Label lbl_ElapsedTime;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txt_InitAmt;
+        private System.Windows.Forms.TextBox txt_ElapsedTime;
+        private System.Windows.Forms.TextBox txt_CurrAmt;
         private System.Windows.Forms.Button btn_IncreaseTime;
         private System.Windows.Forms.Button btn_DecreaseTime;
         private System.Windows.Forms.Button btn_Calculate;
         private System.Windows.Forms.Button btn_Defaults;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lbl_Half_Life;
+        private System.Windows.Forms.Label lbl_HL_result;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnExit;
     }
