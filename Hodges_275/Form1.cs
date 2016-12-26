@@ -37,7 +37,7 @@ namespace Hodges_275
                 gpa = Convert.ToDouble(txtGPA.Text);
                 if ((gpa < 0) || (gpa > 4))
                 {
-                    MessageBox.Show("invalid gpa " + gpa);
+                    MessageBox.Show("invalid gpa " + gpa, "INVALID", MessageBoxButtons.OK);
                     txtGPA.Clear();
                 }
             }
