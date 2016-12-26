@@ -58,9 +58,9 @@
             this.lbl_CurAmount.AutoSize = true;
             this.lbl_CurAmount.Location = new System.Drawing.Point(12, 119);
             this.lbl_CurAmount.Name = "lbl_CurAmount";
-            this.lbl_CurAmount.Size = new System.Drawing.Size(80, 13);
+            this.lbl_CurAmount.Size = new System.Drawing.Size(83, 13);
             this.lbl_CurAmount.TabIndex = 1;
-            this.lbl_CurAmount.Text = "Current Amount";
+            this.lbl_CurAmount.Text = "Current Amount ";
             // 
             // lbl_ElapsedTime
             // 
@@ -75,22 +75,25 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(101, 62);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.Size = new System.Drawing.Size(60, 20);
             this.textBox1.TabIndex = 3;
+            this.textBox1.Text = "100";
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(101, 172);
+            this.textBox2.Location = new System.Drawing.Point(101, 176);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.Size = new System.Drawing.Size(60, 20);
             this.textBox2.TabIndex = 4;
+            this.textBox2.Text = "2";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(101, 115);
+            this.textBox3.Location = new System.Drawing.Point(101, 116);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.Size = new System.Drawing.Size(60, 20);
             this.textBox3.TabIndex = 5;
+            this.textBox3.Text = "25";
             // 
             // btn_IncreaseTime
             // 
