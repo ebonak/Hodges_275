@@ -41,6 +41,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lbl_Half_Life = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbl_Init_Amount
@@ -155,11 +156,22 @@
             this.label2.TabIndex = 12;
             this.label2.Text = "Esmail Bonakdarian";
             // 
+            // btnExit
+            // 
+            this.btnExit.Location = new System.Drawing.Point(143, 258);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(45, 22);
+            this.btnExit.TabIndex = 13;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(336, 288);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbl_Half_Life);
             this.Controls.Add(this.label1);
@@ -196,6 +208,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbl_Half_Life;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnExit;
     }
 }
 

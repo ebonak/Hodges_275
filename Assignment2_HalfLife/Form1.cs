@@ -21,5 +21,10 @@ namespace Assignment2_HalfLife
         {
 
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
