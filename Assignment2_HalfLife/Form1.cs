@@ -12,6 +12,7 @@ namespace Assignment2_HalfLife
 {
     public partial class Form1 : Form
     {
+        // initialize with default values
         private double init_amt = 100.0;
         private double curr_amt = 25.0;
         private double elapsed_time = 2.0;
@@ -24,7 +25,15 @@ namespace Assignment2_HalfLife
         private void Form1_Load(object sender, EventArgs e)
         {
             txt_InitAmt.Text = init_amt.ToString();
+
+            if (curr_amt > init_amt)
+                curr_amt = init_amt;
+
             txt_CurrAmt.Text = curr_amt.ToString();
+
+            if (elapsed_time < 0)
+                elapsed_time = 0.0;
+
             txt_ElapsedTime.Text = elapsed_time.ToString();
         }
 
@@ -32,8 +41,7 @@ namespace Assignment2_HalfLife
         // service code - compute the half-life
         private static double compute_HL(double init_amt, double curr_amt, double hl_time)
         {
-            double half_life = (hl_time * Math.Log(2) / (Math.Log(init_amt / curr_amt)));
-            return half_life;
+            return (hl_time * Math.Log(2) / (Math.Log(init_amt / curr_amt)));
         }
 
         // ------------------- TEXT BOXES ---------------------------
@@ -48,7 +56,12 @@ namespace Assignment2_HalfLife
         // TEXT - Current Amount Changed
         private void txt_CurrAmt_TextChanged(object sender, EventArgs e)
         {
-            curr_amt = Convert.ToDouble(txt_CurrAmt.Text);
+            double tmp_curr_amt = Convert.ToDouble(txt_CurrAmt.Text);
+            if (tmp_curr_amt <= init_amt)
+                curr_amt = tmp_curr_amt;
+            else
+                txt_CurrAmt.Text = curr_amt.ToString();
+
             lbl_HL_result.Text = "";
 
         }
@@ -78,12 +91,33 @@ namespace Assignment2_HalfLife
         }
 
 
+
+        // BUTTON - Increase time
+        private void btn_IncreaseTime_Click(object sender, EventArgs e)
+        {
+            double new_time = Convert.ToDouble(txt_ElapsedTime.Text) + 1;
+            txt_ElapsedTime.Text = new_time.ToString();
+        }
+
+        // BUTTON - Decrease time
+        private void btn_DecreaseTime_Click(object sender, EventArgs e)
+        {
+            double new_time = Convert.ToDouble(txt_ElapsedTime.Text) - 1;
+            if (new_time < 0)
+            {
+                new_time = 0.0;
+                // could do message box here too ..
+            }
+
+            txt_ElapsedTime.Text = new_time.ToString();
+        }
+
+
         // BUTTON - EXIT
         private void btnExit_Click(object sender, EventArgs e)
         {
             Close();
         }
-
 
     }
 }

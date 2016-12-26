@@ -103,6 +103,7 @@
             this.btn_IncreaseTime.TabIndex = 7;
             this.btn_IncreaseTime.Text = "Increase Time";
             this.btn_IncreaseTime.UseVisualStyleBackColor = true;
+            this.btn_IncreaseTime.Click += new System.EventHandler(this.btn_IncreaseTime_Click);
             // 
             // btn_DecreaseTime
             // 
@@ -112,6 +113,7 @@
             this.btn_DecreaseTime.TabIndex = 8;
             this.btn_DecreaseTime.Text = "Decrease Time";
             this.btn_DecreaseTime.UseVisualStyleBackColor = true;
+            this.btn_DecreaseTime.Click += new System.EventHandler(this.btn_DecreaseTime_Click);
             // 
             // btn_Calculate
             // 
@@ -189,6 +191,10 @@
             this.Controls.Add(this.lbl_ElapsedTime);
             this.Controls.Add(this.lbl_CurAmount);
             this.Controls.Add(this.lbl_Init_Amount);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(352, 326);
+            this.MinimumSize = new System.Drawing.Size(352, 326);
             this.Name = "Form1";
             this.Text = "HL Calculator";
             this.Load += new System.EventHandler(this.Form1_Load);
