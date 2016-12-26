@@ -131,10 +131,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Magneto", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(9, 9);
+            this.label1.Font = new System.Drawing.Font("Gabriola", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(50, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(329, 32);
+            this.label1.Size = new System.Drawing.Size(238, 59);
             this.label1.TabIndex = 10;
             this.label1.Text = "Half-Life Calculator";
             // 
@@ -186,7 +186,7 @@
             this.Controls.Add(this.lbl_CurAmount);
             this.Controls.Add(this.lbl_Init_Amount);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "HL Calculator";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
