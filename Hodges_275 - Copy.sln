@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment1_GPA", "Assignment1_GPA\Assignment1_GPA.csproj", "{A8E41EDF-A36A-4151-92D6-B481A150B0A6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment1_GPA", "Hodges_275\Assignment1_GPA.csproj", "{A8E41EDF-A36A-4151-92D6-B481A150B0A6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F9BCB4A4-FE62-4272-B38B-1BBC1D6C242B}"
 	ProjectSection(SolutionItems) = preProject
