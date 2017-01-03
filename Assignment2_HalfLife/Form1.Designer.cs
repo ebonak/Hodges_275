@@ -77,6 +77,7 @@
             this.txt_InitAmt.Name = "txt_InitAmt";
             this.txt_InitAmt.Size = new System.Drawing.Size(60, 20);
             this.txt_InitAmt.TabIndex = 3;
+            this.txt_InitAmt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txt_InitAmt.TextChanged += new System.EventHandler(this.txt_InitAmt_TextChanged);
             // 
             // txt_ElapsedTime
@@ -85,6 +86,7 @@
             this.txt_ElapsedTime.Name = "txt_ElapsedTime";
             this.txt_ElapsedTime.Size = new System.Drawing.Size(60, 20);
             this.txt_ElapsedTime.TabIndex = 5;
+            this.txt_ElapsedTime.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txt_ElapsedTime.TextChanged += new System.EventHandler(this.txt_ElapsedTime_TextChanged);
             // 
             // txt_CurrAmt
@@ -93,6 +95,7 @@
             this.txt_CurrAmt.Name = "txt_CurrAmt";
             this.txt_CurrAmt.Size = new System.Drawing.Size(60, 20);
             this.txt_CurrAmt.TabIndex = 4;
+            this.txt_CurrAmt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txt_CurrAmt.TextChanged += new System.EventHandler(this.txt_CurrAmt_TextChanged);
             // 
             // btn_IncreaseTime
@@ -139,7 +142,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Gabriola", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(50, 0);
+            this.label1.Location = new System.Drawing.Point(49, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(238, 59);
             this.label1.TabIndex = 10;
@@ -196,7 +199,7 @@
             this.MaximumSize = new System.Drawing.Size(352, 326);
             this.MinimumSize = new System.Drawing.Size(352, 326);
             this.Name = "Form1";
-            this.Text = "HL Calculator";
+            this.Text = "Half-Life Calculator";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

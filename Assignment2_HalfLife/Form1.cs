@@ -49,6 +49,7 @@ namespace Assignment2_HalfLife
         private void txt_InitAmt_TextChanged(object sender, EventArgs e)
         {
             init_amt = Convert.ToDouble(txt_InitAmt.Text);
+            // ERROR message - mbox if amount is < 0
             lbl_HL_result.Text = "";
         }
 
@@ -70,6 +71,7 @@ namespace Assignment2_HalfLife
         private void txt_ElapsedTime_TextChanged(object sender, EventArgs e)
         {
             elapsed_time = Convert.ToDouble(txt_ElapsedTime.Text);
+            // ERROR message - mbox if amount is < 0
             lbl_HL_result.Text = "";
         }
 
@@ -78,7 +80,7 @@ namespace Assignment2_HalfLife
         private void btn_Calculate_Click(object sender, EventArgs e)
         {
             double hl = compute_HL(init_amt, curr_amt, elapsed_time);
-            lbl_HL_result.Text = string.Format("Half-life is {0:F}", hl);
+            lbl_HL_result.Text = string.Format("Half-life is {0:F3}", hl);
         }
 
 
