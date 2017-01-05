@@ -12,11 +12,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment2_HalfLife", "Assignment2_HalfLife\Assignment2_HalfLife.csproj", "{B868DA56-1A02-4E1E-9BDC-A75F9B5E77D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment5_CC_Tracker", "Assignment5_CC_Tracker\Assignment5_CC_Tracker.csproj", "{C2151A36-5C56-40C2-9A48-A05D460AE9EC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment5_CC_Tracker", "Assignment3_Vehicle\Assignment5_CC_Tracker.csproj", "{C2151A36-5C56-40C2-9A48-A05D460AE9EC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment4_Hangman", "Assignment4_Hangman\Assignment4_Hangman.csproj", "{149E76D0-3E08-42EF-AE39-4CE9B9B3034A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment3_Vehicle_Tracker", "Assignment3_Vehicle_Tracker\Assignment3_Vehicle_Tracker.csproj", "{86431C59-7BF7-49EC-BB53-03BD48FAA603}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment3_Vehicle_Tracker", "Assignment5_CC_Tracker\Assignment3_Vehicle_Tracker.csproj", "{86431C59-7BF7-49EC-BB53-03BD48FAA603}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment6_SportsOrders", "Assignment6_SportsOrders\Assignment6_SportsOrders.csproj", "{FD5A1C0F-1E32-4E0E-B0DF-6EA6D6953636}"
 EndProject

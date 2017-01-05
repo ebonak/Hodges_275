@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Assignment3_Vehicle.Properties
+namespace Assignment5_CC_Tracker.Properties
 {
 
 
