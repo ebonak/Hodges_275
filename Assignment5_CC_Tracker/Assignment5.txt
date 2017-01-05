@@ -1,0 +1,9 @@
+Alpine Visa, 3412.5, 21.25
+American Express, 105, 11.65
+Chase Visa, 5795, 13.5
+Citibank Visa, -2.3, 18
+Discover Card, 153.25, 12.65
+Kmart, 32.21, 13.66
+Marshall Fields, 265.32, 14
+River Forest Mastercard, 250.65, 17
+Sears, -45.3, 14.3
