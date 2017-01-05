@@ -1,4 +1,4 @@
-﻿namespace Assignment3_Vehicle
+﻿namespace Assignment3_Vehicle_Tracker
 {
     partial class Form1
     {

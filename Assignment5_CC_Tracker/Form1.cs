@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Assignment3_Vehicle
+namespace Assignment3_Vehicle_Tracker
 {
     public partial class Form1 : Form
     {
