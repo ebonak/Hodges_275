@@ -175,6 +175,7 @@
             this.statusStrip1.SizingGrip = false;
             this.statusStrip1.TabIndex = 12;
             this.statusStrip1.Text = "statusStrip1";
+            this.toolTip1.SetToolTip(this.statusStrip1, "Currently open file.");
             // 
             // toolStripStatusLabel1
             // 
