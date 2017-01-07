@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using Assignment5_CC_Tracker;
 
 namespace Assignment3_Vehicle_Tracker
 {
@@ -72,6 +73,10 @@ namespace Assignment3_Vehicle_Tracker
             // to retrieve the correct line from 'data' and parse/display
             // for some reason, idx == -1 sometimes if I clicked too soon, as
             // if the listbox wasn't ready. The if-statement takes care of this.
+            // confirmed behavior on SO
+            // http://stackoverflow.com/questions/41510167/listbox-generates-1-on-initial-select-if-below-displayed-text
+            //
+
             int idx = listBox1.SelectedIndex;
 
             if (idx >= 0)
@@ -82,12 +87,24 @@ namespace Assignment3_Vehicle_Tracker
                 double int_rate = Convert.ToDouble(parts[2]);
                 double interest_earned = owed * int_rate / 100;
 
+                if (interest_earned < 0)
+                    interest_earned = 0.0;
+
                 lbl_owed.Text = string.Format("{0:C}", owed);
                 lbl_int_rate.Text = string.Format("{0:N} %", int_rate);
                 lbl_i_earned.Text = string.Format("{0:C}", interest_earned);
             }
-            else
-                MessageBox.Show("idx: " + idx);
+        }
+
+        private void btn_Close_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBox1_DoubleClick(object sender, EventArgs e)
+        {
+            Form2_Pay_Borrow pay_form = new Form2_Pay_Borrow();
+            pay_form.Show();
         }
     }
 }
