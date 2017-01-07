@@ -16,16 +16,26 @@ namespace Assignment3_Vehicle_Tracker
     {
         OpenFileDialog openFD = new OpenFileDialog();
         List<string> data = new List<string>();
+        string pathinfo = ""; // file to be processed i.e., read/written
+
 
         public Form1()
         {
             InitializeComponent();
             btn_Close.Enabled = false;
-            //   listBox1.Enabled = false;
+            listBox1.Enabled = false;
         }
 
         private void btn_Exit_Click(object sender, EventArgs e)
         {
+            // write out the file and exit the application
+
+            // add .out extension for testing purposes only - remove later
+            StreamWriter sw = new StreamWriter(pathinfo+".out");
+            foreach (string line in data)
+                sw.WriteLine(line);
+            sw.Close();
+
             Close();
         }
 
@@ -40,7 +50,7 @@ namespace Assignment3_Vehicle_Tracker
             {
                 try
                 {
-                    string pathinfo = openFD.FileName;
+                    pathinfo = openFD.FileName;
                     StreamReader sr = new StreamReader(pathinfo);
 
                     string line = "";
