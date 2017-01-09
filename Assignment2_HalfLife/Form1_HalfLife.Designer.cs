@@ -1,6 +1,6 @@
 ﻿namespace Assignment2_HalfLife
 {
-    partial class Form1
+    partial class Form1_HalfLife
     {
         /// <summary>
         /// Required designer variable.

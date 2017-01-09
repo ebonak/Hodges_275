@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace Assignment2_HalfLife
 {
-    public partial class Form1 : Form
+    public partial class Form1_HalfLife : Form
     {
         // initialize with default values
         private double init_amt = 100.0;
         private double curr_amt = 25.0;
         private double elapsed_time = 2.0;
 
-        public Form1()
+        public Form1_HalfLife()
         {
             InitializeComponent();
         }

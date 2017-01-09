@@ -58,7 +58,7 @@
     <Compile Include="Form2_Pay_Borrow.Designer.cs">
       <DependentUpon>Form2_Pay_Borrow.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="CC_Tracker.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

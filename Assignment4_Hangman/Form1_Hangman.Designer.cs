@@ -1,6 +1,6 @@
-﻿namespace Assignment7_VideoDB
+﻿namespace Assignment4_Hangman
 {
-    partial class Form1
+    partial class Form1_Hangman
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // Form1_Hangman
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(589, 216);
+            this.Name = "Form1_Hangman";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Hangman";
+            this.ResumeLayout(false);
+
         }
 
         #endregion

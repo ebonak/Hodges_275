@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Assignment7_VideoDB
 {
-    public partial class Form1 : Form
+    public partial class Form1_VideoDB : Form
     {
-        public Form1()
+        public Form1_VideoDB()
         {
             InitializeComponent();
         }

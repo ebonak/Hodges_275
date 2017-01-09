@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace Hodges_275
 {
-    public partial class Form1 : Form
+    public partial class Form1_GPA : Form
     {
         private string name = "";
         private double gpa = 0.0;
 
-        public Form1()
+        public Form1_GPA()
         {
             InitializeComponent();
         }

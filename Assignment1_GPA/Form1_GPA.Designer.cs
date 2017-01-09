@@ -1,6 +1,6 @@
 ﻿namespace Hodges_275
 {
-    partial class Form1
+    partial class Form1_GPA
     {
         /// <summary>
         /// Required designer variable.

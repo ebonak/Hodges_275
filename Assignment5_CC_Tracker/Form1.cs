@@ -31,10 +31,9 @@ namespace Assignment3_Vehicle_Tracker
             // write out the file and exit the application
 
             // add .out extension for testing purposes only - remove later
-            StreamWriter sw = new StreamWriter(pathinfo+".out");
-            foreach (string line in data)
-                sw.WriteLine(line);
-            sw.Close();
+            using (StreamWriter sw = new StreamWriter(pathinfo + ".out"))
+                foreach (string line in data)
+                    sw.WriteLine(line);
 
             Close();
         }
@@ -51,18 +50,19 @@ namespace Assignment3_Vehicle_Tracker
                 try
                 {
                     pathinfo = openFD.FileName;
-                    StreamReader sr = new StreamReader(pathinfo);
-
-                    string line = "";
-                    while ((line = sr.ReadLine()) != null)
+                    using (StreamReader sr = new StreamReader(pathinfo))
                     {
-                        // load the listbox just with the first field (CC Name)
-                        // keep track of the whole line in list data
-                        listBox1.Items.Add(line.Split(',')[0]);
-                        data.Add(line);
+                        string line = "";
+                        while ((line = sr.ReadLine()) != null)
+                        {
+                            // load the listbox just with the first field (CC Name)
+                            // keep track of the whole line in list data
+                            listBox1.Items.Add(line.Split(',')[0]);
+                            data.Add(line);
+                        }
                     }
 
-                    sr.Close();
+
                     listBox1.Enabled = true;
                     btn_Read.Enabled = false;
                     btn_Close.Enabled = true;

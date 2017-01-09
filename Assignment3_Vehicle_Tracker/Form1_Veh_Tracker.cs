@@ -26,14 +26,13 @@ namespace Assignment3_Vehicle_Tracker
         private void Form1_Veh_Tracker_Load(object sender, EventArgs e)
         {
             // read the input file
-            StreamReader sr = new StreamReader(input_filename);
-
             string line = "";
-            while ((line = sr.ReadLine()) != null)
-            {
-                data.Add(line);
-            }
-            sr.Close();
+            using (StreamReader sr = new StreamReader(input_filename))
+                while ((line = sr.ReadLine()) != null)
+                {
+                    // need to do some parsing/storing of data here
+                    data.Add(line);
+                }
 
             string stat_msg = String.Format("Read {0} lines from file '{1}'",
                                              data.Count, input_filename);
